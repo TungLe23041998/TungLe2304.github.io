@@ -1,0 +1,590 @@
+
+
+.wrapper {
+  width: 300px;
+  height: 500px;
+  background: white;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+.wrapper:hover {
+  transform: scale(1);
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.wrapper .container {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .container .top {
+  height: 80%;
+  width: 100%;
+  background: url(../../../image/Eco-Friendly+Vegan+Trainers+-+Native+Shoes.jpg) no-repeat center center;
+er;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+
+.wrapper .container .bottom {
+  width: 200%;
+  height: 20%;
+  transition: transform 0.5s;
+}
+.wrapper .container .bottom.clicked {
+  transform: translateX(-50%);
+}
+.wrapper .container .bottom h1 {
+  margin: 0;
+  padding: 0;
+}
+.wrapper .container .bottom p {
+  margin: 0;
+  padding: 0;
+}
+.wrapper .container .bottom .left {
+  height: 100%;
+  width: 50%;
+  background: #f4f4f4;
+  position: relative;
+  float: left;
+}
+.wrapper .container .bottom .left .details {
+  padding: 20px;
+  float: left;
+  width: calc(70% - 40px);
+}
+.wrapper .container .bottom .left .buy {
+  float: right;
+  width: calc(30% - 2px);
+  height: 100%;
+  background: #f1f1f1;
+  transition: background 0.5s;
+  border-left: solid thin rgba(0, 0, 0, 0.1);
+}
+.wrapper .container .bottom .left .buy i {
+  font-size: 30px;
+  padding: 30px;
+  color:#277978;
+  transition: transform 0.5s;
+}
+.wrapper .container .bottom .left .buy:hover {
+  background:#133B3E;
+}
+.wrapper .container .bottom .left .buy:hover i {
+  transform: translateY(5px);
+  color:antiquewhite;
+}
+.wrapper .container .bottom .right {
+  width: 50%;
+  background:#51B4B0;
+  color: white;
+  float: right;
+  height: 200%;
+  overflow: hidden;
+}
+.wrapper .container .bottom .right .details {
+  padding: 20px;
+  float: right;
+  width: calc(70% - 40px);
+}
+.wrapper .container .bottom .right .done {
+  width: calc(30% - 2px);
+  float: left;
+  transition: transform 0.5s;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+}
+.wrapper .container .bottom .right .done i {
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+.wrapper .container .bottom .right .remove {
+  width: calc(30% - 1px);
+  clear: both;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+  background:#0E2B36;
+  transition: transform 0.5s, background 0.5s;
+}
+.wrapper .container .bottom .right .remove:hover {
+  background:#12383B;
+}
+.wrapper .container .bottom .right .remove:hover i {
+  transform: translateY(5px);
+}
+.wrapper .container .bottom .right .remove i {
+  transition: transform 0.5s;
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+.wrapper .container .bottom .right:hover .remove, .wrapper .container .bottom .right:hover .done {
+  transform: translateY(-100%);
+}
+.wrapper .inside {
+  z-index: 9;
+  background:#0B1C21;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  border-radius: 0px 0px 200px 200px;
+  transition: all 0.5s, border-radius 2s, top 1s;
+  overflow: hidden;
+}
+.wrapper .inside .icon {
+  position: absolute;
+  right: 85px;
+  top: 85px;
+  color: white;
+  opacity: 1;
+}
+.wrapper .inside:hover {
+  width: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  height: 80%;
+}
+.wrapper .inside:hover .icon {
+  opacity: 0;
+  right: 15px;
+  top: 15px;
+}
+.wrapper .inside:hover .contents {
+  opacity: 1;
+  transform: scale(1);
+  transform: translateY(0);
+}
+.wrapper .inside .contents {
+  padding: 5%;
+  opacity: 0;
+  transform: scale(0.5);
+  transform: translateY(-200%);
+  transition: opacity 0.2s, transform 0.8s;
+}
+.wrapper .inside .contents table {
+  text-align: left;
+  width: 100%;
+	font-family: tieude2;
+	color: aliceblue;
+}
+.wrapper .inside .contents h1, .wrapper .inside .contents p, .wrapper .inside .contents table {
+  color: white;
+	font-family: tieude2;
+	  font-size: 16px;
+}
+.wrapper .inside .contents p {
+  font-size: 16px;
+	font-family: tieude2;
+	color: aliceblue;
+}
+
+
+
+
+
+
+
+
+.wrapper3 {
+  width: 300px;
+  height: 500px;
+  background: white;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+.wrapper3:hover {
+  transform: scale(1);
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.wrapper3 .container3 {
+  width: 100%;
+  height: 100%;
+}
+.wrapper3 .container3 .top3 {
+  height: 80%;
+  width: 100%;
+  background: url(../../../image/Eco-Conscious+Vegan+Sneakers+-+TOMS.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+
+.wrapper3 .container3 .bottom3 {
+  width: 200%;
+  height: 20%;
+  transition: transform 0.5s;
+}
+.wrapper3 .container3 .bottom3.clicked3 {
+  transform: translateX(-50%);
+}
+.wrapper3 .container3 .bottom3 h1 {
+  margin: 0;
+  padding: 0;
+}
+.wrapper3 .container3 .bottom3 p {
+  margin: 0;
+  padding: 0;
+}
+.wrapper3 .container3 .bottom3 .left3 {
+  height: 100%;
+  width: 50%;
+  background: #f4f4f4;
+  position: relative;
+  float: left;
+}
+.wrapper3 .container3 .bottom3 .left3 .details3 {
+  padding: 20px;
+  float: left;
+  width: calc(70% - 40px);
+}
+.wrapper3 .container3 .bottom3 .left3 .buy3 {
+  float: right;
+  width: calc(30% - 2px);
+  height: 100%;
+  background: #f1f1f1;
+  transition: background 0.5s;
+  border-left: solid thin rgba(0, 0, 0, 0.1);
+}
+.wrapper3 .container3 .bottom3 .left3 .buy3 i {
+  font-size: 30px;
+  padding: 30px;
+  color:#277978;
+  transition: transform 0.5s;
+}
+.wrapper3 .container3 .bottom3 .left3 .buy3:hover {
+  background:#133B3E;
+}
+.wrapper3 .container3 .bottom3 .left3 .buy3:hover i {
+  transform: translateY(5px);
+  color:antiquewhite;
+}
+.wrapper3 .container3 .bottom3 .right3 {
+  width: 50%;
+  background:#51B4B0;
+  color: white;
+  float: right;
+  height: 200%;
+  overflow: hidden;
+}
+.wrapper3 .container3 .bottom3 .right3 .details3 {
+  padding: 20px;
+  float: right;
+  width: calc(70% - 40px);
+}
+.wrapper3 .container3 .bottom3 .right3 .done3 {
+  width: calc(30% - 2px);
+  float: left;
+  transition: transform 0.5s;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+}
+.wrapper3 .container3 .bottom3 .right3 .done3 i {
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+.wrapper3 .container3 .bottom3 .right3 .remove3 {
+  width: calc(30% - 1px);
+  clear: both;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+	background:#0E2B36;
+  transition: transform 0.5s, background 0.5s;
+}
+.wrapper3 .container3 .bottom3 .right3 .remove3:hover {
+  background:#12383B;
+}
+.wrapper3 .container3 .bottom3 .right3 .remove3:hover i {
+  transform: translateY(5px);
+}
+.wrapper3 .container3 .bottom3 .right3 .remove3 i {
+  transition: transform 0.5s;
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+.wrapper3 .container3 .bottom3 .right3:hover .remove3, .wrapper3 .container3 .bottom3 .right3:hover .done3 {
+  transform: translateY(-100%);
+}
+.wrapper3 .inside3 {
+  z-index: 9;
+  background:#0B1C21;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  border-radius: 0px 0px 200px 200px;
+  transition: all 0.5s, border-radius 2s, top 1s;
+  overflow: hidden;
+}
+
+.wrapper3 .inside3 .icon3 {
+  position: absolute;
+  right: 85px;
+  top: 85px;
+  color: white;
+  opacity: 1;
+}
+.wrapper3 .inside3:hover {
+  width: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  height: 80%;
+}
+.wrapper3 .inside3:hover .icon3 {
+  opacity: 0;
+  right: 15px;
+  top: 15px;
+}
+.wrapper3 .inside3:hover .contents3 {
+  opacity: 1;
+  transform: scale(1);
+  transform: translateY(0);
+}
+.wrapper3 .inside3 .contents3 {
+  padding: 5%;
+  opacity: 0;
+  transform: scale(0.5);
+  transform: translateY(-200%);
+  transition: opacity 0.2s, transform 0.8s;
+}
+.wrapper3 .inside3 .contents3 table {
+  text-align: left;
+  width: 100%;
+	font-family: tieude2;
+	color: aliceblue;
+}
+.wrapper3 .inside3 .contents3 h1, .wrapper3 .inside3 .contents3 p, .wrapper3 .inside3 .contents3 table {
+  color: white;
+	font-family: tieude2;
+	  font-size: 16px;
+}
+.wrapper3 .inside3 .contents3 p {
+  font-size: 16px;
+	font-family: tieude2;
+	color: aliceblue;
+}
+
+
+
+
+
+
+
+.wrapper2 {
+  width: 300px;
+  height: 500px;
+  background: white;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+.wrapper2:hover {
+  transform: scale(1);
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.wrapper2 .container2 {
+  width: 100%;
+  height: 100%;
+}
+.wrapper2 .container2 .top2 {
+  height: 80%;
+  width: 100%;
+  background: url(../../../image/Fair+Trade+Sneakers+-+Ethletic.jpg) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+
+.wrapper2 .container2 .bottom2 {
+  width: 200%;
+  height: 20%;
+  transition: transform 0.5s;
+}
+.wrapper2 .container2 .bottom2.clicked2 {
+  transform: translateX(-50%);
+}
+.wrapper2 .container2 .bottom2 h1 {
+  margin: 0;
+  padding: 0;
+}
+.wrapper2 .container2 .bottom2 p {
+  margin: 0;
+  padding: 0;
+}
+.wrapper2 .container2 .bottom2 .left2 {
+  height: 100%;
+  width: 50%;
+  background: #f4f4f4;
+  position: relative;
+  float: left;
+}
+.wrapper2 .container2 .bottom2 .left2 .details2 {
+  padding: 20px;
+  float: left;
+  width: calc(70% - 40px);
+}
+.wrapper2 .container2 .bottom2 .left2 .buy2 {
+  float: right;
+  width: calc(30% - 2px);
+  height: 100%;
+  background: #f1f1f1;
+  transition: background 0.5s;
+  border-left: solid thin rgba(0, 0, 0, 0.1);
+}
+.wrapper2 .container2 .bottom2 .left2 .buy2 i {
+  font-size: 30px;
+  padding: 30px;
+  color:#277978;
+  transition: transform 0.5s;
+}
+.wrapper2 .container2 .bottom2 .left2 .buy2:hover {
+  background:#133B3E;
+}
+.wrapper2 .container2 .bottom2 .left2 .buy2:hover i {
+  transform: translateY(5px);
+  color:antiquewhite;
+}
+.wrapper2 .container2 .bottom2 .right2 {
+  width: 50%;
+   background:#51B4B0;
+  color: white;
+  float: right;
+  height: 200%;
+  overflow: hidden;
+}
+.wrapper2 .container2 .bottom2 .right2 .details2 {
+  padding: 20px;
+  float: right;
+  width: calc(70% - 40px);
+}
+.wrapper2 .container2 .bottom2 .right2 .done2 {
+  width: calc(30% - 2px);
+  float: left;
+  transition: transform 0.5s;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+}
+.wrapper2 .container2 .bottom2 .right2 .done2 i {
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+.wrapper2 .container2 .bottom2 .right2 .remove2 {
+  width: calc(30% - 1px);
+  clear: both;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+  background:#0E2B36;
+  transition: transform 0.5s, background 0.5s;
+}
+.wrapper2 .container2 .bottom2 .right2 .remove2:hover {
+ background:#12383B;
+}
+.wrapper2 .container2 .bottom2 .right2 .remove2:hover i {
+  transform: translateY(5px);
+}
+.wrapper2 .container2 .bottom2 .right2 .remove2 i {
+  transition: transform 0.5s;
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+.wrapper2 .container2 .bottom2 .right2:hover .remove2, .wrapper2 .container2 .bottom2 .right2:hover .done2 {
+  transform: translateY(-100%);
+}
+.wrapper2 .inside2 {
+z-index: 9;
+  background:#0B1C21;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  border-radius: 0px 0px 200px 200px;
+  transition: all 0.5s, border-radius 2s, top 1s;
+  overflow: hidden;
+
+}
+.wrapper2 .inside2 .icon2 {
+  position: absolute;
+  right: 85px;
+  top: 85px;
+  color: white;
+  opacity: 1;
+}
+.wrapper2 .inside2:hover {
+  width: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  height: 80%;
+}
+.wrapper2 .inside2:hover .icon2 {
+  opacity: 0;
+  right: 15px;
+  top: 15px;
+}
+.wrapper2 .inside2:hover .contents2 {
+  opacity: 1;
+  transform: scale(1);
+  transform: translateY(0);
+}
+.wrapper2 .inside2 .contents2 {
+  padding: 5%;
+  opacity: 0;
+  transform: scale(0.5);
+  transform: translateY(-200%);
+  transition: opacity 0.2s, transform 0.8s;
+}
+.wrapper2 .inside2 .contents2 table {
+  text-align: left;
+  width: 100%;
+	font-family: tieude2;
+	color: aliceblue;
+}
+.wrapper2 .inside2 .contents2 h1, .wrapper2 .inside2 .contents2 p, .wrapper2 .inside2 .contents2 table {
+  color: white;
+	font-family: tieude2;
+	  font-size: 16px;
+}
+.wrapper2 .inside2 .contents2 p {
+  font-size: 16px;
+	font-family: tieude2;
+	color: aliceblue;
+}
+
+
+
+
+
+
+
+h1
+{
+	color:#0B1C21;
+	font-family: tieude2;
+}

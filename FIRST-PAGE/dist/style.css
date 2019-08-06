@@ -1,0 +1,187 @@
+
+@font-face{font-family: tieude2;
+	src: url(../../font/BigJohnPRO-Regular.otf)}
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim .5s infinite alternate;
+  pointer-events: none;
+	z-index: 200;
+}
+
+.cursor::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 8px solid #f0544f;
+  border-radius: 50%;
+  opacity: .5;
+  top: -8px;
+  left: -8px;
+  animation: cursorAnim2 .5s infinite alternate;
+	z-index: 100;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+body,
+html {
+  overflow: hidden;
+  background-color:#331211;
+  margin: 0;
+  
+	cursor: none;
+}
+.f {
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  font-family: 'Arial';
+  font-size: 0.8em;
+  color: #f0544f;
+}
+.f a {
+  color: #000;
+}
+.Project {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  cursor: none;
+}
+.Project:hover .imgMasked {
+  -webkit-clip-path: circle(100px at center);
+          clip-path: circle(100px at center);
+}
+.Project:hover .Project-hail {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+.Project:hover .Project-hail2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  border: 80px solid #fff4e6;
+  opacity: 0;
+}
+.Project:hover .Project-name {
+  left: 200%;
+  opacity: 1;
+}
+.Project:hover .Project-name:before {
+  width: 100%;
+}
+.Project-hail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #f0544f;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  transition: 0.5s;
+  opacity: 0.2;
+}
+.Project-hail2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  transition: 0.7s;
+  border: 22px solid #f0544f;
+  border-radius: 20px;
+  cursor: none;
+}
+.imgMasked {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  height: 200px;
+  -webkit-clip-path: circle(20px at center);
+          clip-path: circle(20px at center);
+  transition: 0.5s;
+   cursor: none;
+}
+.Project-name {
+  position: absolute;
+  max-width: 600px;
+  min-width: 150px;
+  left: 0;
+  top: 150%;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #000;
+  padding: 3px 6px;
+  z-index: 2;
+  opacity: 0;
+}
+.Project-name:before {
+  content: '';
+  width: 0;
+  height: 100%;
+  background-color: #f0544f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+.text
+{
+	width: 900px;
+	margin: 0 auto;
+	font-family: tieude2;
+	text-align: center;
+	padding:  200px 0px 0px 0px;
+	font-size: 30px;
+	color:#f0544f;
+	
+	
+}

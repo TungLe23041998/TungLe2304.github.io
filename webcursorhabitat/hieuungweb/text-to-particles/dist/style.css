@@ -1,0 +1,21 @@
+input{
+			width: 100%;				
+			height: 0px;
+			opacity: 0;
+			background-color:none;
+			font-size: 0px;
+			font-family:tieude1;
+			text-align: center;
+			border: none;
+			margin-top:-30px;
+			
+		}
+
+.air-text
+{
+	bottom: 360px;
+	width: 100%;
+	height: 100%;	
+	position: relative;
+}
+
